@@ -8,7 +8,7 @@ import { Link } from 'react-scroll'
 
 const Home = () => {
   return (
-    <section className='section-1'>
+    <section id='home' className='section-1'>
       
 
       <div className='section-1-content'>

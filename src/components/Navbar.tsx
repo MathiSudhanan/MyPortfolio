@@ -19,6 +19,17 @@ const Navbar=()=>{
                 spy={true}
                 activeClass='active'
               >
+        <i className="fa-solid fa-bars"></i>
+        </Link>
+        <Link
+                offset={-50}
+                smooth={true}
+                to='about'
+                className='nav-menu'
+                href='#'
+                spy={true}
+                activeClass='active'
+              >
                 About
               </Link>
               <Link
