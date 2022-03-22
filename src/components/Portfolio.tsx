@@ -7,12 +7,12 @@
  
  const Portfolio = () =>{
      return (
-         <div className="section-4">
+         <section id="portfolio" className="section-4">
              <div className="section-4-heading">
                 <h1>Portfolio</h1>
             </div>
-             <div className="section-4-content">
-                <div className="portfolio-cards">
+             <div className="section-4-content center">
+                <div className="portfolio-cards center">
                     <div className="portfolio-card">
                         <img src={budgetmonitorAPI}/>
                         <div className="portfolio-card-content">
@@ -60,7 +60,7 @@
                             <p>
                                 
                                 The front-end application has login page, user creation page, product catalog page with filter and search functionality, 
-                                Shopping cart functionality, check out page with stripe integration with Responsive UI which fits all devices. 
+                                Shopping cart functionality, check out page with stripe integration and Responsive UI which fits all devices. 
                                 
                                 This is a sample store application.
                                 
@@ -81,7 +81,8 @@
                         <div className="portfolio-card-content">
                             <h2>Portfolio</h2>
                             <p>
-                                Portfolio is the React Application completely designed with pure functional components, and pure CSS.
+                                Portfolio is the React Application completely designed with pure functional components, and pure CSS. 
+                                It is designed to be responsive to all mobile devices.
                             </p>
                             <div className="porfolio-card-footer">
                             <a href="#"><i className="fa-regular fa-eye"></i></a>
@@ -99,7 +100,7 @@
                                 This contains rotating animation of iPhone and user scrollable with UI buttons, loading animation of mac book, simple design for airpods 
                                 and scrolling animation for apple watches to match the watch cases and bands. 
                                 <br/>
-                                It is just a web page with necessary animations required for the products in the page.
+                                It is just a web page with necessary animations required for the products in the page. It is designed to be responsive to all mobile devices.
                             </p>
                             <div className="porfolio-card-footer">
                             <a href="#"><i className="fa-regular fa-eye"></i></a>
@@ -109,7 +110,7 @@
                     </div>
                 </div>
             </div>
-         </div>
+         </section>
      )
  }
 

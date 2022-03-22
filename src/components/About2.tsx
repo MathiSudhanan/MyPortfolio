@@ -96,11 +96,10 @@ const About2 = (props: Props) => {
   ];
 
   return (
-    <>
-      {/* <Navbar></Navbar> */}
-      <div className='about-me'>
-        <div className='about-me-header'>
-          <div className='about-me-heading'>
+    
+      <section id='about' className='section-2'>
+        <div className='section-2-header-wrapper center'>
+          <div className='section-2-heading'>
             MathiSudhanan
             <br />
             Full Stack Developer
@@ -108,8 +107,8 @@ const About2 = (props: Props) => {
             Based in India
           </div>
         </div>
-        <div className='about-me-section-wrapper'>
-          <div className='about-me-section-1'>
+        <div className='section-2-content-wrapper'>
+          <div className='section-2-content-1'>
             <p>
               Innovative, task-driven professional with 15+ years of experience
               in web design and development across various industries. Equipped
@@ -119,12 +118,12 @@ const About2 = (props: Props) => {
             </p>
             <p></p>
           </div>
-          <div className='about-me-section-2'>
-            <div className='about-me-img-wrapper center'>
+          <div className='section-2-content-2 center'>
+            <div className='section-2-img-wrapper'>
               <img src={mathi} className='about-me-img' />
             </div>
           </div>
-          <div className='about-me-section-3'>
+          <div className='section-2-content-3'>
             <p>
               Proficient in developing databases, creating rest API, user
               interfaces with Responsive UI, writing and testing codes, troubleshooting
@@ -133,135 +132,24 @@ const About2 = (props: Props) => {
             </p>
           </div>
         </div>
-        <div className='about-me-tags'>
+         <div className='section-2-tags center'>
           {techStackItems.map((item:techStack)=>{
-            // console.log(item);
+            
             return(
-            <div className='about-me-tag'>
-            <div className='about-me-tag-icon'>
-              <img src={item.imageSrcName} className='about-me-icon' />
+            <div className='section-2-tag center'>
+            <div className='section-2-tag-icon'>
+              <img src={item.imageSrcName} className='section-2-icon' />
             </div>
-            <div className='about-me-tag-icon-text'>{item.text}</div>
+            <div className='section-2-tag-icon-text'>{item.text}</div>
 
-            <div className='about-me-tag-icon-years'>{item.years}</div>
+            <div className='section-2-tag-icon-years'>{item.years}</div>
           </div>
             )
           })}
-          {/* <div className='about-me-tag'>
-            <div className='about-me-tag-icon'>
-              <img src={html} className='about-me-icon' />
-            </div>
-            <div className='about-me-tag-icon-text'>HTML</div>
-
-            <div className='about-me-tag-icon-years'>15+</div>
-          </div>
-          <div className='about-me-tag'>
-            <div className='about-me-tag-icon'>
-              <img src={css} className='about-me-icon' />
-            </div>
-            <div className='about-me-tag-icon-text'>CSS</div>
-
-            <div className='about-me-tag-icon-years'>15+</div>
-          </div>
-          <div className='about-me-tag'>
-            <div className='about-me-tag-icon'>
-              <img src={bootstrap} className='about-me-icon' />
-            </div>
-            <div className='about-me-tag-icon-text'>Bootstrap</div>
-
-            <div className='about-me-tag-icon-years'>7+</div>
-          </div>
-          <div className='about-me-tag'>
-            <div className='about-me-tag-icon'>
-              <img src={material} className='about-me-icon' />
-            </div>
-            <div className='about-me-tag-icon-text'>Material UI</div>
-
-            <div className='about-me-tag-icon-years'>1+</div>
-          </div>
-          <div className='about-me-tag'>
-            <div className='about-me-tag-icon'>
-              <img src={javascript} className='about-me-icon' />
-            </div>
-            <div className='about-me-tag-icon-text'>Javascript</div>
-
-            <div className='about-me-tag-icon-years'>13+</div>
-          </div>
-          <div className='about-me-tag'>
-            <div className='about-me-tag-icon'>
-              <img src={typescript} className='about-me-icon' />
-            </div>
-            <div className='about-me-tag-icon-text'>TypeScript</div>
-
-            <div className='about-me-tag-icon-years'>3+</div>
-          </div>
-          <div className='about-me-tag'>
-            <div className='about-me-tag-icon'>
-              <img src={react} className='about-me-icon' />
-            </div>
-            <div className='about-me-tag-icon-text'>React</div>
-
-            <div className='about-me-tag-icon-years'>3+</div>
-          </div>
-          <div className='about-me-tag'>
-            <div className='about-me-tag-icon'>
-              <img src={redux} className='about-me-icon' />
-            </div>
-            <div className='about-me-tag-icon-text'>Redux</div>
-
-            <div className='about-me-tag-icon-years'>2+</div>
-          </div>
-          <div className='about-me-tag'>
-            <div className='about-me-tag-icon'>
-              <img src={mvc} className='about-me-icon' />
-            </div>
-            <div className='about-me-tag-icon-text'>.NET MVC</div>
-
-            <div className='about-me-tag-icon-years'>8+</div>
-          </div>
-          <div className='about-me-tag'>
-            <div className='about-me-tag-icon'>
-              <img src={api} className='about-me-icon' />
-            </div>
-            <div className='about-me-tag-icon-text'>Rest API</div>
-
-            <div className='about-me-tag-icon-years'>7+</div>
-          </div>
-          <div className='about-me-tag'>
-            <div className='about-me-tag-icon'>
-              <img src={RabbitMQ} className='about-me-icon' />
-            </div>
-            <div className='about-me-tag-icon-text'>RabbitMQ</div>
-
-            <div className='about-me-tag-icon-years'>5+</div>
-          </div>
-          <div className='about-me-tag'>
-            <div className='about-me-tag-icon'>
-              <img src={sql} className='about-me-icon' />
-            </div>
-            <div className='about-me-tag-icon-text'>SQL Server</div>
-
-            <div className='about-me-tag-icon-years'>15+</div>
-          </div>
-          <div className='about-me-tag'>
-            <div className='about-me-tag-icon'>
-              <img src={postgres} className='about-me-icon' />
-            </div>
-            <div className='about-me-tag-icon-text'>PostGreSQL</div>
-
-            <div className='about-me-tag-icon-years'>2+</div>
-          </div>
-          <div className='about-me-tag'>
-            <div className='about-me-tag-icon'>
-              <img src={redis} className='about-me-icon' />
-            </div>
-            <div className='about-me-tag-icon-text'>Redis</div>
-
-            <div className='about-me-tag-icon-years'>5+</div>
-          </div> */}
-        </div>
-      </div>
-    </>
+         
+        </div> 
+      </section>
+    
   );
 };
 
