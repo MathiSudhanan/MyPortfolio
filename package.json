@@ -51,7 +51,6 @@
   },
   "devDependencies": {
     "@types/google.maps": "^3.48.2",
-    "@types/react-scroll": "^1.8.3",
-  
+    "@types/react-scroll": "^1.8.3"
   }
 }
