@@ -21,7 +21,7 @@ const Contact = (props: Props) => {
   const serviceId = "SendMailTest1";
   const templateId = "template_Id";
   const userId = "GYCHWT43Xuez4DdLR";
-  // const { ref, ...rest } = register("firstName");
+ 
 
   const onSubmit = (data:any, r:any) => {
    
@@ -40,7 +40,7 @@ const Contact = (props: Props) => {
   };
 
   const sendEmail = (serviceId:string, templateId:string, mailData:any, userId:string) => {
-    // e.preventDefault();
+    
 
     emailjs
       .send(serviceId, templateId, mailData, userId)
@@ -136,65 +136,59 @@ const Contact = (props: Props) => {
       </form>
       </div>
       <div className="footer">
-      
-      
-      {/* <i className="fa-solid fa-user"></i> */}
-      
-
-
       <Link
-                offset={-50}
-                smooth={true}
-                to='home'
-                className='footer-link center'
-                href='#'
-                spy={true}
-                activeClass='active'
-              >
-                <i className="fa-solid fa-house-chimney"></i>
-                <span>Home</span>
-              </Link>
+          offset={-50}
+          smooth={true}
+          to='home'
+          className='footer-link center'
+          href='#'
+          spy={true}
+          activeClass='active'
+        >
+          <i className="fa-solid fa-house-chimney"></i>
+          <span>Home</span>
+        </Link>
 
-              <Link
-                offset={-50}
-                smooth={true}
-                to='about'
-                className='footer-link center'
-                href='#'
-                spy={true}
-                activeClass='active'
-              >
-                <i className="fa-regular fa-user"></i>
-                <span>About Me</span>
+        <Link
+          offset={-50}
+          smooth={true}
+          to='about'
+          className='footer-link center'
+          href='#'
+          spy={true}
+          activeClass='active'
+        >
+          <i className="fa-regular fa-user"></i>
+          <span>About Me</span>
 
-              </Link>
-              <Link
-                offset={-50}
-                smooth={true}
-                to='experience'
-                className='footer-link center'
-                href='#'
-                spy={true}
-                activeClass='active'
-              >
-                <i className="fa-solid fa-laptop"></i>
-                <span>Experience</span>
-              
-              </Link>
-              
-              <Link
-                offset={-50}
-                smooth={true}
-                to='portfolio'
-                className='footer-link center'
-                href='#'
-                spy={true}
-                activeClass='active'
-              >
-                <i className="fa-solid fa-id-card"></i>
-                <span>Portfolio</span>
+        </Link>
+        <Link
+          offset={-50}
+          smooth={true}
+          to='experience'
+          className='footer-link center'
+          href='#'
+          spy={true}
+          activeClass='active'
+        >
+          <i className="fa-solid fa-laptop"></i>
+          <span>Experience</span>
+        
+        </Link>
+        
+        <Link
+          offset={-50}
+          smooth={true}
+          to='portfolio'
+          className='footer-link center'
+          href='#'
+          spy={true}
+          activeClass='active'
+        >
+          <i className="fa-solid fa-id-card"></i>
+          <span>Portfolio</span>
 
-              </Link>
+        </Link>
               
       </div>
     </section>
