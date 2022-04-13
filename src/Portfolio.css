@@ -240,6 +240,21 @@
 
 }
 
+.resume-download-wrapper{
+  padding: .5rem;
+  /* border: .2rem solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: .5rem;
+  /* background-color:gray; */
+  /* margin-left: 10%; */
+  margin-top: 2rem;
+}
+
+.resume-download{
+  font-size: 5rem;
+}
 
 h1 span.bounce {
   position: relative;

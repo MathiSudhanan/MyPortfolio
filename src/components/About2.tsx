@@ -136,7 +136,7 @@ const About2 = (props: Props) => {
           {techStackItems.map((item:techStack)=>{
             
             return(
-            <div className='section-2-tag center'>
+            <div key={item.text} className='section-2-tag center'>
             <div className='section-2-tag-icon'>
               <img src={item.imageSrcName} className='section-2-icon' />
             </div>
