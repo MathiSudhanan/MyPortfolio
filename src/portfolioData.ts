@@ -116,7 +116,7 @@ export const expData = [
         techStack:
           "Web API 2, Linq, ADO.Net with custom Framework, Swagger, Redis, Rabbit MQ, Topshelf, SQL Server",
         content:
-          "Dashboard screen to view status of all applications and issues if any. Check weekly status and issues in graphical representation. Combined all other production support related in all applications to one application. Few configuration set-up related screens related to Asynchronous Stat Engine API has been added to it.",
+          "The Application is designed to overcome the existing timeout issues in Stat Engine API. The Asynchronous API is a wrapper API on Stat Engine. This provides the token based Asynchronous mode to the requests. When the long running request is made the API generates the token and sends it back to the customer and sends the request to Topshelf service Stat Engine Service through RabbitMq. The Stat Engine service is a multithreaded service which runs in clusters to process the request and stores the response in Redis and sends the notification to the Clients through RabbitMQ. The Client then makes another request to the API to get the response back.",
       },
       {
         id: 3,
@@ -125,7 +125,7 @@ export const expData = [
         techStack:
           "Web API 2, Linq, ADO.Net with custom Framework, Swagger, Redis, Rabbit MQ, SQL Server",
         content:
-          "The Application is designed to overcome the existing timeout issues in Stat Engine API. The Asynchronous API is a wrapper API on Stat Engine. This provides the token based Asynchronous mode to the requests. When the long running request is made the API generates the token and sends it back to the customer and sends the request to Topshelf service Stat Engine Service through RabbitMq. The Stat Engine service is a multithreaded service which runs in clusters to process the request and stores the response in Redis and sends the notification to the Clients through RabbitMQ. The Client then makes another request to the API to get the response back.",
+          "The Application is designed to overcome the existing Permission related issues in applications like HM.Com, HM2, HM Operations. The logic is spread all over the applications and implemented in their own way. The API deals with data level permissions for Portfolio, Fund, Context Date, Stat and Category permissions along with Internal User, Internal User (with Client Mode, Internal Mode and Full Access Mode). The Stat and Category has waterfall logic in the permissioning. All were dealt in Permission API which is a single point of Contact for Permissions.",
       },
       {
         id: 4,
