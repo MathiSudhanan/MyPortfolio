@@ -15,7 +15,7 @@
                 <div className="portfolio-cards center">
 
                 <div className="portfolio-card">
-                    <img src={shoppingCart}/>
+                    <img src={shoppingCart} alt="Shopping Cart"/>
 
                         <div className="portfolio-card-content">
                             <h2>Shopping Cart</h2>
