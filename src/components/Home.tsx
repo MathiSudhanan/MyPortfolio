@@ -11,16 +11,16 @@ const Home = () => {
     let publicURL = process.env.PUBLIC_URL;
     console.log(publicURL);
     saveAs(
-      { publicURL } + "/files/MathiSudhanan.pdf",
+      "https://mathisudhanan.github.io/MyPortfolio/files/MathiSudhanan.pdf",
       "mathiSudhanan-resume.pdf"
     );
   };
 
   return (
-    <section id='home' className='section-1'>
-      <div className='section-1-content'>
-        <h1 className='section-1-heading '>
-          <span className='bounce'>Hi,&nbsp;</span>
+    <section id="home" className="section-1">
+      <div className="section-1-content">
+        <h1 className="section-1-heading ">
+          <span className="bounce">Hi,&nbsp;</span>
           <span>I'm MathiSudhanan. </span>
           <span>
             {/* <br /> */}
@@ -28,22 +28,26 @@ const Home = () => {
           </span>
         </h1>
       </div>
-      <div className='scroll-img-wrapper center'>
+      <div className="scroll-img-wrapper center">
         <LinkScroll
           offset={-50}
           smooth={true}
-          to='about'
-          className='nav-menu'
-          href='#'
+          to="about"
+          className="nav-menu"
+          href="#"
           spy={true}
-          activeClass='active'
+          activeClass="active"
         >
-          <i className='fa-solid fa-angles-down scroll-img bounce'></i>
+          <i className="fa-solid fa-angles-down scroll-img bounce"></i>
         </LinkScroll>
       </div>
-      {/* <div className="resume-download-wrapper">
-      <a href="#" className="nav-menu " onClick={saveFile}><i className="fa-solid fa-file-arrow-down resume-download"></i><br/>Resume</a>
-      </div> */}
+      <div className="resume-download-wrapper">
+        <a href="#" className="nav-menu " onClick={saveFile}>
+          <i className="fa-solid fa-file-arrow-down resume-download"></i>
+          <br />
+          Resume
+        </a>
+      </div>
     </section>
   );
 };
